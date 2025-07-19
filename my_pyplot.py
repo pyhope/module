@@ -55,7 +55,7 @@ def linear_func(x, a, b):
 def exp_func(x, a, b):
     return np.power(10, a * x + b)
 
-def plot_with_err(ax, x, y, err, c=0, marker='s', ls='none', label=None, ec=None, alpha=1, zorder=10):
+def plot_with_err(ax, x, y, err, c='C0', marker='s', ls='none', label=None, ec=None, alpha=1, zorder=10):
     if ec is None:
         mec = c
         ebc = c
