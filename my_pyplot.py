@@ -35,12 +35,12 @@ def init_plot_single(width=8, height=6):
     fig, ax = plt.subplots(figsize=(width, height))
     return fig, ax
 
-def init_plot_double(width=12, height=6, sharex=False, sharey=False, wspace=0.03):
+def init_plot_double(width=12, height=6, sharex=False, sharey=False, wspace=0.1):
     fig, axes = plt.subplots(1, 2, sharex=sharex, sharey=sharey, figsize=(width, height))
     fig.subplots_adjust(wspace=wspace)
     return fig, axes
 
-def init_plot_triple(width=18, height=6, sharex=False, sharey=False, wspace=0.03):
+def init_plot_triple(width=18, height=6, sharex=False, sharey=False, wspace=0.1):
     fig, axes = plt.subplots(1, 3, sharex=sharex, sharey=sharey, figsize=(width, height))
     fig.subplots_adjust(wspace=wspace)
     return fig, axes
